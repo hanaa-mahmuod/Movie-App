@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie APP</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="home bg-black">
+        <div class="cont">
+            <div class="search">
+                <input id="input" type="text"class="bg-black form-control me-3 search-by-name  mb-5 rounded-pill w-50 m-auto translate-middle-x"  placeholder="Search">
+            </div>
+            <div class="row   container-fluid mt-5 ">
+             
+        </div>
+      
+        <div class=" navbar bg-black position-fixed" >
+            <div  class="d-flex navlinks flex-column justify-content-between   h-100 d-none">
+                <div class="animate">
+                 <ul  >
+                     <li class="nowPlaying">
+                       <a href="#input" > Now playing</a>
+                     </li>
+                     <li class="Popular">
+                        Popular
+                     </li>
+                     <li class=" TopRated">
+                        Top Rated
+                     </li>
+                     <li class="Trending">
+                        Trending
+                     </li>
+                     <li class="Upcoming">
+                        Upcoming
+                     </li>
+                     <li class="Contact Us">
+                       <a href="#contact"> Contact Us</a>
+                     </li>
+                 </ul>
+                
+                </div>
+                <div class="contacts  text-white ms-3">
+                    <a href="" class="text-white me-2 ms-3"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""class="text-white me-2"> <i class="fa-brands fa-twitter"></i></a>
+                     <a href=""class="text-white me-2"><i class="fa-solid fa-globe"></i></a>
+                <p class="pe-5"> Copyright Â© 2019 All
+                    Rights Reserved</p>
+                <p class="pe-5" > Created By <span style="color: #AE453F; font-size: 18PX;" >HANAA</span></p>
+                 </div>
+                
+             </div>
+           
+            <div class="icon bg-white d-flex flex-column justify-content-between">
+                <div class="w-75 "> <img src="images/logo.png" alt="" class="w-100 mt-4 ps-2" ></div>
+               
+                <i class="fa-solid fa-bars ps-4 fs-1"></i>
+               <div class="fs-6 ps-3 pb-3">
+                <a href="" class="text-black"><i class="fa-solid fa-globe"></i></a><br>
+             <a href="" class="text-black"><i class="fa-solid fa-share-nodes"></i></a>
+               </div>
+            </div>
+        </div>
+        <h1 style="font-size: 32px;font-weight: 600;color: white; margin-top: 50px;">Contact Us</h1>
+        <form action="">
+            <div class="contact row mt-4 pe-3 " id="contact">
+           <div class="col-md-6 ">
+            <input type="text" required id="name" maxlength="37"  class="form-control mt-4 w-100" placeholder="Enter Your Name" data-has-listeners="true">
+            <span class="error"></span>
+           </div>
+           <div class="col-md-6">
+            <input type="email" required id="email"   class="form-control mt-4  w-100" placeholder="Enter Your Email" data-has-listeners="true">
+            <span class="error"></span>
+           </div>
+           <div class="col-md-6">
+            <input type="number" required id="number"   class="form-control mt-4  w-100" placeholder="Enter Your number" data-has-listeners="true">
+            <span class="error"></span>
+           </div>
+           <div class="col-md-6">
+            <input type="number" required id="age"   class="form-control mt-4  w-100" placeholder="Enter Your age" data-has-listeners="true">
+            <span class="error"></span>
+           </div>
+           <div class="col-md-6">
+            <input type="password" required id="password"   class="form-control mt-4  w-100" placeholder="Enter Password" data-has-listeners="true">
+            <span class="error"></span>
+            <span class="showpass" style="opacity:0; bottom: -20px;"> 
+            <i data-show="show" class="fa-solid fa-eye-slash"></i>
+        </span>
+        
+           </div>
+           <div class="col-md-6">
+            <input type="password" required id="repassword"   class="form-control mt-4  w-100" placeholder="ReEnter Password" data-has-listeners="true">
+            <span class="error"></span>
+           
+    
+           </div>
+            <div class="col-md-12">
+                <button type="submit" class=" rounded-2 mb-3">Submit</button>
+    
+            </div>
+            </div>  
+         
+        </form>
+       
+       
+    </div>
+
+    </div>
+   
+
+<script src="java/jquery-3.7.1.min.js"></script>
+<script src="java/bootstrap.bundle.min.js" ></script>
+<script src="java/java.js" ></script>
+
+</body>
+</html>

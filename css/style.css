@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   transition: all 0.5s;
+}
+li
+{
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   transition: all 0.5s;
+  
+
+}
+ul
+{
+    
+    list-style-type: none;
+}
+
+.movie
+{
+   border-radius: 10px; 
+}
+ .row
+ {
+    row-gap: 20px;
+    
+ }
+li:hover,a:hover
+{
+    color:#AE453F ;
+}
+body
+{
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+.home
+{
+    width: 100%;
+    
+    position: relative;
+    padding-top: 10px;
+}
+.navbar
+{
+    background-color: white;
+   
+   position: absolute;
+   width: 70px;
+ 
+ top: 0px;
+bottom: 0;
+left: 0;
+z-index: 99999999999;
+
+}
+
+.navbar .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 100vh;
+}
+.contact
+{
+    margin-top: 450px;
+}
+
+ .cont
+ {
+    margin-left: 120px;
+    margin-right: 80px;
+    margin-top: 30px;
+    
+ }
+ .meal img
+ {
+    border-radius: 10px;
+ }
+ .moreinfo span{
+    font-family: "Roboto", sans-serif;
+    background-color: #CFF4FC;
+    border-radius: 2px;
+    padding: 5px;
+    color: 
+    #055160;
+    font-size: 16px;
+    font-weight: 400;
+ }
+.search input::placeholder
+{
+   
+        color:rgba(255, 255, 255, 0.581);
+        font-size: 16px;
+        font-weight: 400;
+    
+}
+.contact input
+{
+    width: 200px;
+    margin: 30px;
+}
+
+.movie
+{
+    overflow: hidden;
+    position: relative;
+}
+.movie img {
+    transition: all 0.9s;
+}
+.movie:hover img 
+{
+  
+    transform: scale(1.3);
+rotate: 5deg;
+}
+ 
+
+.movie  .layer
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0,0,0); 
+  background-color: rgba(0, 0, 0, 0.652); 
+   z-index: 9999;
+   top: 0;
+   right: 0;
+   left: 0px;
+  
+   opacity: 0;
+   transition: all 0.5s;
+  
+}
+.movie:hover .layer
+{
+   opacity: 1;
+   
+}
+.layer h2
+{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   
+    
+}
+.layer p
+{
+    font-size: 16px;
+    color: rgb(237, 237, 237);
+    font-weight: 400;
+    
+    margin-bottom: 5px;
+}
+
+.layer  .more i
+{
+    font-size: 16px;
+    color: #FFC107;
+    font-weight: 900;
+}
+.layer  .more span
+{
+   border-radius: 50%;
+ border: solid;
+ border-color: #017601;
+ border-width: 2px;
+ padding: 5px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-layer
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icons-layer,.text-content
+{
+    transition: all 0.5s;
+
+}
+.movie:hover .icons-layer
+{
+    transform: translatey(-25px);
+
+}
+.icons-layer
+{
+    margin-top: 50px;
+}
+
+.movie:hover .text-content
+{
+    transform: translatey(20px);
+
+}
+.movie:hover .overview
+{
+    animation:bounceIn;
+    animation-duration: 2s;
+    
+}
+
+.contact .form-control
+{
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-color: #CED4DA;
+   
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+.contacts p
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: RGB(153, 153, 153);
+}
+.contact button
+{
+    color: white;
+    background-color: black;
+    border: solid;
+    border-color: black;
+    transition: all 0.5ms;
+    width: 100px;
+}
+.contact button:hover
+{
+    background-color: white;
+    color: black;
+    border-color:white;
+}
+.contact input::placeholder
+{
+    color:rgba(255, 255, 255, 0.581);
+    font-size: 16px;
+    font-weight: 400;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  .loadingSc 
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
